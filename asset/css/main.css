@@ -455,6 +455,14 @@ html {
     display: none;
 }
 
+.container1 input:checked~.header__language-jp {
+    color: #DC0706;
+}
+
+.container1 input:checked~.header__language-en {
+    color: #DC0706;
+}
+
 .container__h-content-text:focus+.container_content-list {
     display: block;
 }

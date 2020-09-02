@@ -6,6 +6,12 @@ html {
     box-sizing: border-box;
 }
 
+.figma {
+    height: 48px;
+    width: 100%;
+    background-color: #0B308E;
+}
+
 .grid {
     position: relative;
     width: 1280px;
@@ -137,7 +143,44 @@ html {
     top: 0px;
 }
 
-.header__icon-boolmark svg {
+.header-bars__m {
+    position: fixed;
+    top: 0;
+    left: 0%;
+    height: 400px;
+    width: 320px;
+    max-width: 100%;
+    background-color: green;
+    z-index: 2;
+    /* transform: translateX(-100%); */
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0);
+    display: none;
+    z-index: 1;
+}
+
+.header-bars__input {
+    display: none;
+}
+
+.header-bars__input:checked~.overlay {
+    display: block;
+}
+
+.header-bars__input:checked~.header-bars__m {
+    /* transform: translateX(0%); */
+    display: block;
+}
+
+.header__icon-boolmark i {
     position: absolute;
     left: 29.17%;
     right: 29.17%;
@@ -175,6 +218,7 @@ html {
     line-height: 20px;
     /* identical to box height */
     text-align: right;
+    color: white;
 }
 
 .header__icon-bell span {
@@ -186,13 +230,14 @@ html {
     font-family: Avenir Next;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 16px;
     text-align: center;
     background: #DC0706;
     border-radius: 14px;
     width: 16px;
     height: 16px;
+    color: white;
 }
 
 .header__text-company {
@@ -337,6 +382,7 @@ html {
 
 .container__h {
     display: flex;
+    width: 1280px;
 }
 
 .container-lable1__input {
@@ -365,28 +411,60 @@ html {
 }
 
 .container__h-content {
+    position: relative;
+}
+
+.container__h-content-text {
     display: flex;
     height: 32px;
     width: 260px;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     /* Line - Dark */
     border: 1px solid #ABAFBA;
     box-sizing: border-box;
     border-radius: 2px;
     margin: 17px 0 0 16px;
+    position: relative;
+    outline: none;
 }
 
-.container__h-content-text {
-    flex: 1;
-    margin: 6px 28px 6px 8px;
-    font-family: Avenir Next;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    /* identical to box height, or 143% */
-    /* Ink Black */
+.content__button-link {
+    text-decoration: none;
     color: #353F58;
+}
+
+.content__button-link-icon {
+    position: absolute;
+    top: 10px;
+    right: 9px;
+    width: 12px;
+    height: 12px;
+}
+
+.container_content-list {
+    position: absolute;
+    top: 32px;
+    left: 16px;
+    background-color: #fff;
+    width: 260px;
+    list-style: none;
+    border: 1px solid #969696;
+    border-radius: 2px;
+    z-index: 1;
+    padding: 8px;
+    display: none;
+}
+
+.container1 input:checked~.header__language-jp {
+    color: #DC0706;
+}
+
+.container1 input:checked~.header__language-en {
+    color: #DC0706;
+}
+
+.container__h-content-text:focus+.container_content-list {
+    display: block;
 }
 
 .container__h-content-img {
@@ -397,52 +475,122 @@ html {
     margin: 11px 9px 8px 0;
 }
 
-.container__h-but {
+.container_content-item a {
+    text-decoration: none;
+    color: grey;
+    margin: 4px;
+    width: 260px;
     display: flex;
-    flex-direction: row;
-    padding: 6px 18px;
-    width: 72px;
-    height: 32px;
-    background-color: #1A6DFA;
-    border: 1px solid #ABAFBA;
-    box-sizing: border-box;
-    border-radius: 2px;
-    margin: 17px 0 0 16px;
-    font-family: Avenir Next;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 20px;
-    /* identical to box height, or 143% */
-    color: #FFFFFF;
 }
 
-.container__h-but2 {
-    display: flex;
-    flex-direction: row;
-    padding: 6px 16px;
-    width: 78px;
-    height: 32px;
-    margin: 17px 0 0 16px;
-    font-family: Avenir Next;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    background: #FFFFFF;
-    /* identical to box height, or 143% */
-    text-align: center;
-    /* Ink Black */
-    color: #353F58;
-    border: 1px solid #ABAFBA;
-    box-sizing: border-box;
-    border-radius: 2px;
-}
+
+/* pagination */
 
 .container-Pagination {
+    display: flex;
     margin: 16px 0 0 107px;
     width: 270px;
     height: 32px;
+    position: relative;
 }
+
+.container-Pagination:hover .select-input__list {
+    display: block;
+}
+
+.container-Pagination-link {
+    color: #686D7E;
+    line-height: 32px;
+}
+
+.Pagination-1left {
+    margin-left: 20px;
+    width: 16px;
+    height: 16px;
+}
+
+.select-input {
+    width: 70px;
+    height: 32px;
+    margin-left: 12px;
+    background: #FFFFFF;
+    /* Line - Dark */
+    border: 1px solid #ABAFBA;
+    box-sizing: border-box;
+    border-radius: 2px;
+    position: relative;
+}
+
+.select-input__lable {
+    line-height: 32px;
+    margin: 0 8px 0;
+}
+
+.select-input i {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    margin-left: 23px;
+}
+
+.select-input--lable-stop {
+    width: 34px;
+    height: 20px;
+    margin: 6px 0px 0 8px;
+    line-height: 32px;
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+    /* Neutrals / Web / Gray 160 #323130 */
+    color: #323130;
+}
+
+.Pagination-2right {
+    width: 16px;
+    height: 16px;
+    font-family: Fabric MDL2 Assets;
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 10px;
+}
+
+.Pagination-1right {
+    width: 16px;
+    height: 16px;
+    font-family: Fabric MDL2 Assets;
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 20px;
+}
+
+.select-input__list {
+    background-color: white;
+    position: absolute;
+    left: -1px;
+    top: 14px;
+    width: 70px;
+    border-radius: 2px;
+    border: 1px solid #ABAFBA;
+    z-index: 1;
+    list-style: none;
+    padding: 8px 0;
+    text-align: center;
+    display: none;
+}
+
+.select-input__item {
+    align-items: center;
+}
+
+.select-input__item-link {
+    text-decoration: none;
+}
+
+
+/* table */
 
 .container-table {
     position: absolute;
@@ -454,7 +602,6 @@ html {
     background: #FFFFFF;
     /* Line - Dark */
     border: 1px solid #ABAFBA;
-    z-index: 1;
 }
 
 table {
@@ -699,25 +846,77 @@ thead .th1_10 {
     background-color: #FFFFFF;
 }
 
-.container__table-tr {
+.th1_1 {
     display: flex;
+    position: relative;
 }
 
-.container__tr2-check {
+.container__table-text {
     position: absolute;
-    right: 9px;
-    top: 0;
+    top: 6px;
+    height: 20px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 0;
+    /* Ink Black */
+    color: #353F58;
+}
+
+.container__table-text i {
+    position: absolute;
+    top: 2px;
+    right: -28px;
     width: 12px;
-    height: 12px;
-    margin-top: 10px;
-    font-family: Fabric External MDL2 Assets;
+    height: 11.9px;
+    /* Ink Black */
+    color: #353F58;
+}
+
+.container__table-text:focus~.container__table-list {
+    display: block;
+}
+
+.container__table-list {
+    position: absolute;
+    list-style: none;
+    top: 14px;
+    left: 6px;
+    background-color: #fff;
+    z-index: 1;
+    border: 1px solid #969696;
+    border-radius: 2px;
+    padding: 0;
+    width: 90px;
+    display: none;
+}
+
+.container__table-item {
+    margin: 0 auto;
+}
+
+.container__table-item a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.container__h-but {
+    display: flex;
+    flex-direction: row;
+    padding: 6px 18px;
+    width: 72px;
+    height: 32px;
+    background-color: #1A6DFA;
+    border: 1px solid #ABAFBA;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin: 17px 0 0 16px;
+    font-family: Avenir Next;
     font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 12px;
-    /* identical to box height, or 100% */
-    /* Neutrals / Web / Gray 130 #605E5C */
-    color: #605E5C;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    color: #FFFFFF;
 }
 
 .th1_6 i {
@@ -735,4 +934,26 @@ thead .th1_10 {
     letter-spacing: 0.03em;
     /* Ink Black */
     color: #353F58;
+}
+
+.container__h-but2 {
+    display: flex;
+    flex-direction: row;
+    padding: 6px 16px;
+    width: 78px;
+    height: 32px;
+    margin: 17px 0 0 16px;
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    background: #FFFFFF;
+    /* identical to box height, or 143% */
+    text-align: center;
+    /* Ink Black */
+    color: #353F58;
+    border: 1px solid #ABAFBA;
+    box-sizing: border-box;
+    border-radius: 2px;
 }
