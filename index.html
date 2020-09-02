@@ -16,9 +16,26 @@
         <div class="grid">
             <div class="header_h">
                 <div class="header-left">
-                    <div class="header__icon-bars">
+                    <label for="header-bars__input" class="header__icon-bars">
                         <i class="fas fa-bars"></i>
+                    </label>
+                    <input type="checkbox" name="" id="header-bars__input" class="header-bars__input">
+                    <div class="header-bars__m">
+                        <ul class="header-bars__list">
+                            <li>
+                                <a href="" class="header-bars__link"></a>
+                            </li>
+                            <li>
+                                <a href="" class="header-bars__link"></a>
+                            </li>
+                            <li>
+                                <a href="" class="header-bars__link"></a>
+                            </li>
+                        </ul>
                     </div>
+
+                    <label for="header-bars__input" class="overlay">
+                    </label>
                     <svg class='header__img' width="75" height="21" viewBox="0 0 75 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M63.389 20.003L74.937 0H58.302L46.76 20.003H63.389Z" fill="white"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M69.855 0.807983L59.22 19.208H62.925L73.548 0.807983H69.855Z" fill="#00B3F0"/>
@@ -32,23 +49,18 @@
                         <span class="header__language-2">/</span>
                         <span class="header__language-en">EN</span>
                     </div>
+
                 </div>
+
                 <div class="header-left">
                     <div class="header__icon-boolmark">
-                        <svg width="20" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13.25 0V20L7 16.8457L0.75 20V0H13.25ZM12 1.25H2V17.9688C2.83984 17.5456 3.67318 17.1224 4.5 16.6992C5.32682 16.276 6.16016 15.8561 7 15.4395C7.83984 15.8561 8.67318 16.276 9.5 16.6992C10.3268 17.1224 11.1602 17.5456 12 17.9688V1.25Z" fill="white"/>
-                            </svg>
+                        <a href=""><i class="far fa-bookmark"></i></a>
                     </div>
                     <div class="header__icon-bell">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="48" height="48" fill="#0B308E"/>
-                            <path d="M31.5 29V30.25H26.5C26.5 30.5951 26.4349 30.9206 26.3047 31.2266C26.1745 31.526 25.9954 31.7897 25.7676 32.0176C25.5397 32.2454 25.2728 32.4245 24.9668 32.5547C24.6673 32.6849 24.3451 32.75 24 32.75C23.6549 32.75 23.3294 32.6849 23.0234 32.5547C22.724 32.4245 22.4603 32.2454 22.2324 32.0176C22.0046 31.7897 21.8255 31.526 21.6953 31.2266C21.5651 30.9206 21.5 30.5951 21.5 30.25H16.5V29H17.75V21.5C17.75 20.9271 17.8249 20.3737 17.9746 19.8398C18.1243 19.306 18.3327 18.8079 18.5996 18.3457C18.873 17.8835 19.1986 17.4635 19.5762 17.0859C19.9603 16.7018 20.3835 16.3763 20.8457 16.1094C21.3079 15.8359 21.806 15.6243 22.3398 15.4746C22.8737 15.3249 23.4271 15.25 24 15.25C24.5729 15.25 25.1263 15.3249 25.6602 15.4746C26.194 15.6243 26.6921 15.8359 27.1543 16.1094C27.6165 16.3763 28.0365 16.7018 28.4141 17.0859C28.7982 17.4635 29.1237 17.8835 29.3906 18.3457C29.6641 18.8079 29.8757 19.306 30.0254 19.8398C30.1751 20.3737 30.25 20.9271 30.25 21.5V29H31.5ZM29 29V21.5C29 20.8099 28.8665 20.1621 28.5996 19.5566C28.3392 18.9512 27.9811 18.4238 27.5254 17.9746C27.0762 17.5189 26.5488 17.1608 25.9434 16.9004C25.3379 16.6335 24.6901 16.5 24 16.5C23.3099 16.5 22.6621 16.6335 22.0566 16.9004C21.4512 17.1608 20.9206 17.5189 20.4648 17.9746C20.0156 18.4238 19.6576 18.9512 19.3906 19.5566C19.1302 20.1621 19 20.8099 19 21.5V29H29ZM24 31.5C24.1758 31.5 24.3385 31.4674 24.4883 31.4023C24.638 31.3372 24.7682 31.2493 24.8789 31.1387C24.9961 31.0215 25.0872 30.888 25.1523 30.7383C25.2174 30.5885 25.25 30.4258 25.25 30.25H22.75C22.75 30.4258 22.7826 30.5885 22.8477 30.7383C22.9128 30.888 23.0007 31.0215 23.1113 31.1387C23.2285 31.2493 23.362 31.3372 23.5117 31.4023C23.6615 31.4674 23.8242 31.5 24 31.5Z" fill="white"/>
-                            <rect x="24" y="8" width="16" height="16" rx="8" fill="#DC0706"/>
-                            <path d="M31.9979 11.288C32.3659 11.288 32.7139 11.34 33.0419 11.444C33.3699 11.548 33.6539 11.7 33.8939 11.9C34.1419 12.1 34.3339 12.344 34.4699 12.632C34.6139 12.912 34.6859 13.232 34.6859 13.592C34.6859 14.088 34.5619 14.5 34.3139 14.828C34.0659 15.156 33.7499 15.384 33.3659 15.512V15.536C33.5899 15.592 33.7979 15.684 33.9899 15.812C34.1819 15.932 34.3499 16.084 34.4939 16.268C34.6379 16.444 34.7499 16.644 34.8299 16.868C34.9179 17.092 34.9619 17.336 34.9619 17.6C34.9619 18.024 34.8819 18.4 34.7219 18.728C34.5699 19.048 34.3579 19.32 34.0859 19.544C33.8219 19.768 33.5099 19.936 33.1499 20.048C32.7899 20.16 32.4059 20.216 31.9979 20.216C31.5899 20.216 31.2059 20.16 30.8459 20.048C30.4859 19.936 30.1699 19.768 29.8979 19.544C29.6339 19.32 29.4219 19.048 29.2619 18.728C29.1099 18.4 29.0339 18.024 29.0339 17.6C29.0339 17.328 29.0779 17.076 29.1659 16.844C29.2539 16.612 29.3699 16.408 29.5139 16.232C29.6659 16.056 29.8379 15.912 30.0299 15.8C30.2219 15.68 30.4219 15.592 30.6299 15.536V15.512C30.2459 15.376 29.9299 15.156 29.6819 14.852C29.4339 14.548 29.3099 14.148 29.3099 13.652C29.3099 13.292 29.3779 12.968 29.5139 12.68C29.6579 12.384 29.8499 12.136 30.0899 11.936C30.3379 11.728 30.6219 11.568 30.9419 11.456C31.2699 11.344 31.6219 11.288 31.9979 11.288ZM31.9979 12.476C31.6379 12.476 31.3419 12.584 31.1099 12.8C30.8859 13.016 30.7739 13.308 30.7739 13.676C30.7739 14.02 30.8819 14.312 31.0979 14.552C31.3219 14.792 31.6219 14.912 31.9979 14.912C32.1659 14.912 32.3259 14.88 32.4779 14.816C32.6299 14.752 32.7619 14.664 32.8739 14.552C32.9859 14.44 33.0739 14.308 33.1379 14.156C33.2019 14.004 33.2339 13.844 33.2339 13.676C33.2339 13.492 33.1979 13.328 33.1259 13.184C33.0619 13.032 32.9699 12.904 32.8499 12.8C32.7379 12.696 32.6059 12.616 32.4539 12.56C32.3099 12.504 32.1579 12.476 31.9979 12.476ZM31.9979 16.136C31.7899 16.136 31.5939 16.172 31.4099 16.244C31.2339 16.316 31.0779 16.416 30.9419 16.544C30.8139 16.664 30.7099 16.816 30.6299 17C30.5579 17.176 30.5219 17.372 30.5219 17.588C30.5219 18.036 30.6619 18.384 30.9419 18.632C31.2219 18.88 31.5739 19.004 31.9979 19.004C32.4139 19.004 32.7619 18.88 33.0419 18.632C33.3219 18.384 33.4619 18.036 33.4619 17.588C33.4619 17.38 33.4219 17.188 33.3419 17.012C33.2699 16.828 33.1659 16.672 33.0299 16.544C32.9019 16.416 32.7459 16.316 32.5619 16.244C32.3859 16.172 32.1979 16.136 31.9979 16.136Z" fill="white"/>
-                            </svg>
-
+                        <a href=""><i class="far fa-bell"></i>
+                        <span>8</span>
+                        </a>
                     </div>
-
                     <div class="header__text-company">
                         <span class="header__text-company-en">Hanako Haneda</span>
                         <span class="header__text-company-jp">HNDデスク</span>
@@ -57,8 +69,6 @@
                 <div class="header__footer">
                 </div>
                 <div class="line"></div>
-
-
             </div>
             <button class="header__footer-button">更新</button>
             <span class="header__footer-lable">業務グループ権限</span>
@@ -71,25 +81,43 @@
                     <input type="text" class="container-lable1__input" placeholder="Placeholder">
                     <span class="container-lable2">画面</span>
                     <div class="container__h-content">
-                        <span class="container__h-content-text">Content</span>
-                        <svg class="container__h-content-img" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                            </svg>
+                        <button class="container__h-content-text">Content<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                        <ul class="container_content-list">
+                            <li class="container_content-item">
+                                <a href="#">Content</a>
+                            </li>
+                            <li class="container_content-item">
+                                <a href="#">Content</a>
+                            </li>
+                            <li class="container_content-item">
+                                <a href="#">Content</a>
+                            </li>
+                        </ul>
                     </div>
                     <button type="submit" class="container__h-but">検索</button>
-                    <svg class="container-Pagination" width="270" height="32" viewBox="0 0 270 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="80.5" y="0.5" width="69" height="31" rx="1.5" fill="white" stroke="#ABAFBA"/>
-                        <path d="M95.308 20H88.84V18.698L92.788 14.778C93.0867 14.47 93.3433 14.148 93.558 13.812C93.7727 13.476 93.88 13.098 93.88 12.678C93.88 12.4167 93.8333 12.1833 93.74 11.978C93.6467 11.7633 93.5207 11.5813 93.362 11.432C93.2033 11.2827 93.0167 11.1707 92.802 11.096C92.5873 11.012 92.3587 10.97 92.116 10.97C91.612 10.97 91.1967 11.1333 90.87 11.46C90.5433 11.7773 90.338 12.188 90.254 12.692L88.924 12.468C88.98 12.0947 89.0967 11.7493 89.274 11.432C89.4607 11.1053 89.694 10.8253 89.974 10.592C90.254 10.3493 90.576 10.1627 90.94 10.032C91.3133 9.90133 91.71 9.836 92.13 9.836C92.5407 9.836 92.9327 9.89667 93.306 10.018C93.6887 10.1393 94.0247 10.3167 94.314 10.55C94.6033 10.7833 94.832 11.0773 95 11.432C95.1773 11.7867 95.266 12.1927 95.266 12.65C95.266 12.9673 95.224 13.2613 95.14 13.532C95.056 13.8027 94.9393 14.0593 94.79 14.302C94.65 14.5447 94.482 14.778 94.286 15.002C94.09 15.2167 93.8847 15.4313 93.67 15.646L90.45 18.782H95.308V20Z" fill="#323130"/>
-                        <path d="M136 20.709L130.146 14.8555L130.855 14.1465L136 19.291L141.145 14.1465L141.854 14.8555L136 20.709Z" fill="#686D7E"/>
-                        <path d="M165.854 16.668C165.854 17.1813 165.761 17.6527 165.574 18.082C165.397 18.5113 165.145 18.8847 164.818 19.202C164.501 19.51 164.123 19.7527 163.684 19.93C163.245 20.098 162.774 20.182 162.27 20.182C161.766 20.182 161.295 20.098 160.856 19.93C160.417 19.7527 160.039 19.51 159.722 19.202C159.405 18.8847 159.153 18.5113 158.966 18.082C158.789 17.6527 158.7 17.1813 158.7 16.668C158.7 16.1547 158.789 15.688 158.966 15.268C159.153 14.8387 159.405 14.47 159.722 14.162C160.039 13.854 160.417 13.616 160.856 13.448C161.295 13.2707 161.766 13.182 162.27 13.182C162.774 13.182 163.245 13.2707 163.684 13.448C164.123 13.616 164.501 13.854 164.818 14.162C165.145 14.47 165.397 14.8387 165.574 15.268C165.761 15.688 165.854 16.1547 165.854 16.668ZM164.482 16.668C164.482 16.3507 164.431 16.0473 164.328 15.758C164.235 15.4687 164.095 15.2167 163.908 15.002C163.721 14.778 163.488 14.6007 163.208 14.47C162.937 14.3393 162.625 14.274 162.27 14.274C161.915 14.274 161.598 14.3393 161.318 14.47C161.047 14.6007 160.819 14.778 160.632 15.002C160.445 15.2167 160.301 15.4687 160.198 15.758C160.105 16.0473 160.058 16.3507 160.058 16.668C160.058 16.9853 160.105 17.2887 160.198 17.578C160.301 17.8673 160.445 18.124 160.632 18.348C160.819 18.572 161.047 18.7493 161.318 18.88C161.598 19.0107 161.915 19.076 162.27 19.076C162.625 19.076 162.937 19.0107 163.208 18.88C163.488 18.7493 163.721 18.572 163.908 18.348C164.095 18.124 164.235 17.8673 164.328 17.578C164.431 17.2887 164.482 16.9853 164.482 16.668ZM170.801 14.442H169.261V20H167.945V14.442H166.629V13.364H167.945V11.978C167.945 11.586 167.987 11.2267 168.071 10.9C168.164 10.564 168.309 10.2747 168.505 10.032C168.71 9.78933 168.967 9.598 169.275 9.458C169.592 9.318 169.975 9.248 170.423 9.248C170.74 9.248 171.016 9.28067 171.249 9.346L171.095 10.48C170.992 10.452 170.89 10.4287 170.787 10.41C170.684 10.3913 170.568 10.382 170.437 10.382C170.185 10.382 169.98 10.4287 169.821 10.522C169.672 10.606 169.555 10.7227 169.471 10.872C169.387 11.0213 169.331 11.194 169.303 11.39C169.275 11.5767 169.261 11.7727 169.261 11.978V13.364H170.801V14.442ZM182.029 20H175.561V18.698L179.509 14.778C179.807 14.47 180.064 14.148 180.279 13.812C180.493 13.476 180.601 13.098 180.601 12.678C180.601 12.4167 180.554 12.1833 180.461 11.978C180.367 11.7633 180.241 11.5813 180.083 11.432C179.924 11.2827 179.737 11.1707 179.523 11.096C179.308 11.012 179.079 10.97 178.837 10.97C178.333 10.97 177.917 11.1333 177.591 11.46C177.264 11.7773 177.059 12.188 176.975 12.692L175.645 12.468C175.701 12.0947 175.817 11.7493 175.995 11.432C176.181 11.1053 176.415 10.8253 176.695 10.592C176.975 10.3493 177.297 10.1627 177.661 10.032C178.034 9.90133 178.431 9.836 178.851 9.836C179.261 9.836 179.653 9.89667 180.027 10.018C180.409 10.1393 180.745 10.3167 181.035 10.55C181.324 10.7833 181.553 11.0773 181.721 11.432C181.898 11.7867 181.987 12.1927 181.987 12.65C181.987 12.9673 181.945 13.2613 181.861 13.532C181.777 13.8027 181.66 14.0593 181.511 14.302C181.371 14.5447 181.203 14.778 181.007 15.002C180.811 15.2167 180.605 15.4313 180.391 15.646L177.171 18.782H182.029V20ZM188.661 14.778C188.922 14.8433 189.165 14.9553 189.389 15.114C189.622 15.2633 189.823 15.4453 189.991 15.66C190.159 15.8747 190.29 16.122 190.383 16.402C190.486 16.682 190.537 16.9807 190.537 17.298C190.537 17.7647 190.448 18.18 190.271 18.544C190.094 18.908 189.851 19.216 189.543 19.468C189.244 19.72 188.894 19.9113 188.493 20.042C188.092 20.182 187.667 20.252 187.219 20.252C186.771 20.252 186.342 20.182 185.931 20.042C185.53 19.9113 185.175 19.72 184.867 19.468C184.568 19.216 184.33 18.908 184.153 18.544C183.976 18.18 183.887 17.7647 183.887 17.298C183.887 16.9713 183.934 16.668 184.027 16.388C184.13 16.108 184.265 15.8607 184.433 15.646C184.61 15.4313 184.811 15.254 185.035 15.114C185.268 14.9647 185.511 14.8527 185.763 14.778V14.75C185.315 14.5913 184.946 14.3207 184.657 13.938C184.377 13.5553 184.237 13.0887 184.237 12.538C184.237 12.1273 184.316 11.7587 184.475 11.432C184.634 11.096 184.848 10.8113 185.119 10.578C185.39 10.3353 185.702 10.1533 186.057 10.032C186.421 9.90133 186.808 9.836 187.219 9.836C187.62 9.836 188.003 9.90133 188.367 10.032C188.731 10.1533 189.044 10.3307 189.305 10.564C189.576 10.788 189.79 11.068 189.949 11.404C190.108 11.7307 190.187 12.0993 190.187 12.51C190.187 13.0513 190.042 13.5227 189.753 13.924C189.473 14.3253 189.109 14.6007 188.661 14.75V14.778ZM185.595 12.58C185.595 12.804 185.632 13.014 185.707 13.21C185.791 13.406 185.903 13.5787 186.043 13.728C186.192 13.868 186.365 13.98 186.561 14.064C186.766 14.148 186.986 14.19 187.219 14.19C187.443 14.19 187.653 14.148 187.849 14.064C188.045 13.98 188.218 13.868 188.367 13.728C188.516 13.5787 188.633 13.406 188.717 13.21C188.801 13.014 188.843 12.804 188.843 12.58C188.843 12.3467 188.796 12.132 188.703 11.936C188.619 11.7307 188.502 11.558 188.353 11.418C188.213 11.2687 188.045 11.1567 187.849 11.082C187.653 10.998 187.443 10.956 187.219 10.956C186.986 10.956 186.766 10.998 186.561 11.082C186.365 11.1567 186.192 11.2687 186.043 11.418C185.903 11.558 185.791 11.7307 185.707 11.936C185.632 12.132 185.595 12.3467 185.595 12.58ZM185.273 17.228C185.273 17.508 185.32 17.7647 185.413 17.998C185.506 18.2313 185.637 18.432 185.805 18.6C185.982 18.7587 186.188 18.8847 186.421 18.978C186.664 19.0713 186.93 19.118 187.219 19.118C187.499 19.118 187.756 19.0713 187.989 18.978C188.232 18.8847 188.437 18.7587 188.605 18.6C188.773 18.432 188.904 18.2313 188.997 17.998C189.1 17.7647 189.151 17.508 189.151 17.228C189.151 16.9573 189.1 16.71 188.997 16.486C188.904 16.2527 188.773 16.052 188.605 15.884C188.437 15.716 188.232 15.5853 187.989 15.492C187.756 15.3987 187.499 15.352 187.219 15.352C186.939 15.352 186.678 15.3987 186.435 15.492C186.202 15.5853 185.996 15.716 185.819 15.884C185.651 16.052 185.516 16.2527 185.413 16.486C185.32 16.71 185.273 16.9573 185.273 17.228Z" fill="#323130"/>
-                        <path d="M32 9.71094L24.7109 17L32 24.2891L31.2891 25L23.2891 17L31.2891 9L32 9.71094ZM25 9.71094L17.7109 17L25 24.2891L24.2891 25L16.2891 17L24.2891 9L25 9.71094Z" fill="#686D7E"/>
-                        <path d="M206.023 24.2734L213.289 17L206.023 9.72656L206.727 9.02344L214.711 17L206.727 24.9766L206.023 24.2734Z" fill="#686D7E"/>
-                        <path d="M63.2734 24.9766L55.2891 17L63.2734 9.02344L63.9766 9.72656L56.7109 17L63.9766 24.2734L63.2734 24.9766Z" fill="#686D7E"/>
-                        <path d="M238.711 9L246.711 17L238.711 25L238 24.2891L245.289 17L238 9.71094L238.711 9ZM245.711 9L253.711 17L245.711 25L245 24.2891L252.289 17L245 9.71094L245.711 9Z" fill="#686D7E"/>
-                        </svg>
-
+                    <div class="container-Pagination">
+                        <a href="" class="container-Pagination-link"><i class="fas fa-angle-double-left Pagination-2left"></i></a>
+                        <a href="" class="container-Pagination-link"><i class="fas fa-angle-left Pagination-1left"></i></a>
+                        <div class="select-input">
+                            <span class="select-input__lable">2</span>
+                            <i class="select-input__icon fas fa-angle-down"></i>
+                            <ul class="select-input__list">
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__item-link">1</a>
+                                </li>
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__item-link">2</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="select-input--lable-stop">
+                            <span class="select-input__lable3">of</span>
+                            <span class="select-input__lable2">28</span>
+                        </div>
+                        <a href="" class="container-Pagination-link"><i class="fas fa-angle-double-right  Pagination-2right"></i></a>
+                        <a href="" class="container-Pagination-link"><i class="fas fa-angle-right  Pagination-1right"></i></a>
+                    </div>
                 </div>
-
                 <table class="container-table">
                     <thead>
                         <tr class="tr1">
@@ -108,10 +136,18 @@
                     <tr class="tr2">
                         <th class="th1_1">
                             <div class="container__table-tr">
-                                <span class="container__tr2th1">UPDATE</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
+                                <button class="container__table-text">UPDATE<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
                             </div>
 
                         </th>
@@ -121,47 +157,179 @@
                         <th class="th1_5">CEレコード</th>
                         <th class="th1_6"><i class="fas fa-circle"></i></th>
                         <th class="th1_7">
+
                             <div class="container__table-tr">
-                                <span class="container__tr2th7">参照／更新</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
+                                <button class="container__table-text">参照／更新<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </th>
+                        <th class="th1_8">
+
+                            <div class="container__table-tr">
+                                <button class="container__table-text">参照／更新<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
+                        <th class="th1_9">
+
+                            <div class="container__table-tr">
+                                <button class="container__table-text">参照のみ<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
+                        <th class="th1_10">
+
+                            <div class="container__table-tr">
+                                <button class="container__table-text">参照不可<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tr class="tr2">
+                        <th class="th1_1">
+                            <div class="container__table-tr">
+                                <button class="container__table-text">UPDATE<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
+                        <th class="th1_2">HND</th>
+                        <th class="th1_3">NH</th>
+                        <th class="th1_4">HND業務グループA</th>
+                        <th class="th1_5">CEレコード</th>
+                        <th class="th1_6"><i class="fas fa-circle"></i></th>
+                        <th class="th1_7">
+                            <div class="container__table-tr">
+                                <button class="container__table-text">参照／更新<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
                             </div>
                         </th>
                         <th class="th1_8">
                             <div class="container__table-tr">
-                                <span class="container__tr2th8">参照／更新</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
+                                <button class="container__table-text">参照／更新<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
                             </div>
                         </th>
                         <th class="th1_9">
                             <div class="container__table-tr">
-                                <span class="container__tr2th9">参照のみ</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
+                                <button class="container__table-text">参照のみ<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
                             </div>
                         </th>
                         <th class="th1_10">
                             <div class="container__table-tr">
-                                <span class="container__tr2th10">参照不可</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
+                                <button class="container__table-text">参照不可<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
                             </div>
                         </th>
                     </tr>
                     <tr class="tr2">
                         <th class="th1_1">
                             <div class="container__table-tr">
-                                <span class="container__tr2th1">UPDATE</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
+                                <button class="container__table-text">UPDATE<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
                             </div>
-
                         </th>
                         <th class="th1_2">HND</th>
                         <th class="th1_3">NH</th>
@@ -170,144 +338,85 @@
                         <th class="th1_6"><i class="fas fa-circle"></i></th>
                         <th class="th1_7">
                             <div class="container__table-tr">
-                                <span class="container__tr2th7">参照／更新</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
+                                <button class="container__table-text">参照／更新<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
                             </div>
                         </th>
                         <th class="th1_8">
                             <div class="container__table-tr">
-                                <span class="container__tr2th8">参照／更新</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
+                                <button class="container__table-text">参照／更新<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
                             </div>
                         </th>
                         <th class="th1_9">
                             <div class="container__table-tr">
-                                <span class="container__tr2th9">参照のみ</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
+                                <button class="container__table-text">参照のみ<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
                             </div>
                         </th>
                         <th class="th1_10">
                             <div class="container__table-tr">
-                                <span class="container__tr2th10">参照不可</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
-                            </div>
-                        </th>
-                    </tr>
-
-                    <tr class="tr2">
-                        <th class="th1_1">
-                            <div class="container__table-tr">
-                                <span class="container__tr2th1">UPDATE</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
-                            </div>
-
-                        </th>
-                        <th class="th1_2">HND</th>
-                        <th class="th1_3">NH</th>
-                        <th class="th1_4">HND業務グループA</th>
-                        <th class="th1_5">CEレコード</th>
-                        <th class="th1_6"><i class="fas fa-circle"></i></th>
-                        <th class="th1_7">
-                            <div class="container__table-tr">
-                                <span class="container__tr2th7">参照／更新</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
-                            </div>
-                        </th>
-                        <th class="th1_8">
-                            <div class="container__table-tr">
-                                <span class="container__tr2th8">参照／更新</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
-                            </div>
-                        </th>
-                        <th class="th1_9">
-                            <div class="container__table-tr">
-                                <span class="container__tr2th9">参照のみ</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
-                            </div>
-                        </th>
-                        <th class="th1_10">
-                            <div class="container__table-tr">
-                                <span class="container__tr2th10">参照不可</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
-                            </div>
-                        </th>
-                    </tr>
-
-                    <tr class="tr2">
-                        <th class="th1_1">
-                            <div class="container__table-tr">
-                                <span class="container__tr2th1">UPDATE</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
-                            </div>
-
-                        </th>
-                        <th class="th1_2">HND</th>
-                        <th class="th1_3">NH</th>
-                        <th class="th1_4">HND業務グループA</th>
-                        <th class="th1_5">CEレコード</th>
-                        <th class="th1_6"><i class="fas fa-circle"></i></th>
-                        <th class="th1_7">
-                            <div class="container__table-tr">
-                                <span class="container__tr2th7">参照／更新</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
-                            </div>
-                        </th>
-                        <th class="th1_8">
-                            <div class="container__table-tr">
-                                <span class="container__tr2th8">参照／更新</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
-                            </div>
-                        </th>
-                        <th class="th1_9">
-                            <div class="container__table-tr">
-                                <span class="container__tr2th9">参照のみ</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
-                            </div>
-                        </th>
-                        <th class="th1_10">
-                            <div class="container__table-tr">
-                                <span class="container__tr2th10">参照不可</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
+                                <button class="container__table-text">参照不可<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
                             </div>
                         </th>
                     </tr>
                     <tr class="tr2">
                         <th class="th1_1">
                             <div class="container__table-tr">
-                                <span class="container__tr2th1">UPDATE</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
+                                <button class="container__table-text">UPDATE<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
                             </div>
-
                         </th>
                         <th class="th1_2">HND</th>
                         <th class="th1_3">NH</th>
@@ -316,44 +425,247 @@
                         <th class="th1_6"><i class="fas fa-circle"></i></th>
                         <th class="th1_7">
                             <div class="container__table-tr">
-                                <span class="container__tr2th7">参照／更新</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
+                                <button class="container__table-text">参照／更新<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
                             </div>
                         </th>
                         <th class="th1_8">
                             <div class="container__table-tr">
-                                <span class="container__tr2th8">参照／更新</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
+                                <button class="container__table-text">参照／更新<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
                             </div>
                         </th>
                         <th class="th1_9">
                             <div class="container__table-tr">
-                                <span class="container__tr2th9">参照のみ</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
+                                <button class="container__table-text">参照のみ<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
                             </div>
                         </th>
                         <th class="th1_10">
                             <div class="container__table-tr">
-                                <span class="container__tr2th10">参照不可</span>
-                                <svg class="container__tr2-check" width=" 12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 6.70898L0.146484 0.855469L0.855469 0.146484L6 5.29102L11.1445 0.146484L11.8535 0.855469L6 6.70898Z" fill="#605E5C"/>
-                                </svg>
+                                <button class="container__table-text">参照不可<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
                             </div>
                         </th>
                     </tr>
-
-
+                    <tr class="tr2">
+                        <th class="th1_1">
+                            <div class="container__table-tr">
+                                <button class="container__table-text">UPDATE<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
+                        <th class="th1_2">HND</th>
+                        <th class="th1_3">NH</th>
+                        <th class="th1_4">HND業務グループA</th>
+                        <th class="th1_5">CEレコード</th>
+                        <th class="th1_6"><i class="fas fa-circle"></i></th>
+                        <th class="th1_7">
+                            <div class="container__table-tr">
+                                <button class="container__table-text">参照／更新<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
+                        <th class="th1_8">
+                            <div class="container__table-tr">
+                                <button class="container__table-text">参照／更新<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
+                        <th class="th1_9">
+                            <div class="container__table-tr">
+                                <button class="container__table-text">参照のみ<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
+                        <th class="th1_10">
+                            <div class="container__table-tr">
+                                <button class="container__table-text">参照不可<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr class="tr2">
+                        <th class="th1_1">
+                            <div class="container__table-tr">
+                                <button class="container__table-text">UPDATE<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
+                        <th class="th1_2">HND</th>
+                        <th class="th1_3">NH</th>
+                        <th class="th1_4">HND業務グループA</th>
+                        <th class="th1_5">CEレコード</th>
+                        <th class="th1_6"><i class="fas fa-circle"></i></th>
+                        <th class="th1_7">
+                            <div class="container__table-tr">
+                                <button class="container__table-text">参照／更新<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
+                        <th class="th1_8">
+                            <div class="container__table-tr">
+                                <button class="container__table-text">参照／更新<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
+                        <th class="th1_9">
+                            <div class="container__table-tr">
+                                <button class="container__table-text">参照のみ<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
+                        <th class="th1_10">
+                            <div class="container__table-tr">
+                                <button class="container__table-text">参照不可<i class="fas fa-angle-down content__button-link-icon"></i></button>
+                                <ul class="container__table-list">
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                    <li class="container__table-item">
+                                        <a href="#">Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
+                    </tr>
                 </table>
-
-
             </div>
         </div>
+    </div>
 </body>
 
 </html>
