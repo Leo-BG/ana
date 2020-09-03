@@ -449,7 +449,7 @@ html {
 
 .container_content-list {
     position: absolute;
-    top: 32px;
+    top: 48px;
     left: 16px;
     background-color: #fff;
     width: 260px;
@@ -500,7 +500,7 @@ html {
     position: relative;
 }
 
-.container-Pagination:hover .select-input__list {
+.select-input:hover .select-input__list {
     display: block;
 }
 
@@ -557,7 +557,6 @@ html {
 .Pagination-2right {
     width: 16px;
     height: 16px;
-    font-family: Fabric MDL2 Assets;
     font-size: 16px;
     line-height: 16px;
     margin-left: 10px;
@@ -566,7 +565,6 @@ html {
 .Pagination-1right {
     width: 16px;
     height: 16px;
-    font-family: Fabric MDL2 Assets;
     font-size: 16px;
     line-height: 16px;
     margin-left: 20px;
@@ -576,7 +574,7 @@ html {
     background-color: white;
     position: absolute;
     left: -1px;
-    top: 14px;
+    top: 30px;
     width: 70px;
     border-radius: 2px;
     border: 1px solid #ABAFBA;
