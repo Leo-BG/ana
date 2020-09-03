@@ -70,19 +70,23 @@ html {
     content: "";
     display: block;
     position: absolute;
-    left: 14.58%;
-    right: 64.58%;
-    top: 70.83%;
-    bottom: 25%;
+    border: 1px solid #FFFFFF;
     /* White */
-    background: #FFFFFF;
+    background-color: #FFFFFF;
+    width: 20px;
+    left: 18.58%;
+    right: 64.58%;
+    top: 68.83%;
 }
 
 .header__language-jp {
     position: absolute;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    height: 20px;
     left: 14.58%;
     right: 64.58%;
-    top: 29.17%;
+    top: 26.17%;
     bottom: 29.17%;
     /* 14 - Small / Demi - lh20 */
     font-family: Avenir Next;
@@ -91,7 +95,7 @@ html {
     font-size: 14px;
     line-height: 20px;
     /* identical to box height, or 143% */
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.03em;
     /* White */
     color: #FFFFFF;
@@ -118,15 +122,17 @@ html {
 
 .header__language-en {
     position: absolute;
-    left: 64.58%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    left: 59.58%;
     right: 14.58%;
-    top: 29.17%;
+    top: 26.17%;
     bottom: 29.17%;
     /* 14 - Small / Regular - lh20 */
     font-family: Avenir Next;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
     /* identical to box height, or 143% */
     text-align: center;
@@ -956,4 +962,19 @@ thead .th1_10 {
     border: 1px solid #ABAFBA;
     box-sizing: border-box;
     border-radius: 2px;
+}
+
+
+/*check-radio */
+
+.pretty.p-default input:checked~.state label:after {
+    background-color: #353f58 !important;
+}
+
+.pretty .state label:after,
+.pretty .state label:before {
+    width: 14.43px;
+    height: 14.43px;
+    left: 4px;
+    top: 2px;
 }
